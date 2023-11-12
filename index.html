@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./index.js"></script>
+  </head>
+  <body>
+    <div class="container container_position">
+      <form class="form" id="form" action="/">
+        <h1 class="title">Регистрация</h1>
+        <div class="form__controls form__controls_position">
+          <label class="required" for="email">Email</label>
+          <input
+            class="input-control input-control_color"
+            id="email"
+            name="email"
+            type="email"
+          />
+          <div class="error"></div>
+        </div>
+        <div class="form__controls form__controls_position">
+          <label class="required" for="username">ФИО</label>
+          <input
+            class="input-control input-control_color"
+            id="username"
+            name="username"
+            type="text"
+          />
+          <div class="error"></div>
+        </div>
+        <div class="form__controls form__controls_position">
+          <label class="required" for="password">Пароль</label>
+          <input
+            class="input-control input-control_color"
+            id="password"
+            name="password"
+            type="password"
+          />
+          <div class="error"></div>
+        </div>
+        <div class="form__controls form__controls_position">
+          <label class="required" for="password">Подтверждение пароля</label>
+          <input
+            class="input-control input-control_color"
+            id="password2"
+            name="password2"
+            type="password"
+          />
+          <div class="error"></div>
+        </div>
+        <div class="form__controls_position">
+          <label class="check required"
+            ><input
+              class="check__input"
+              id="myCheckbox"
+              name="myCheckbox"
+              type="checkbox"
+              required
+              value="yes"
+            />
+            <span class="check__box"></span>
+            Я подтверждаю, что хочу зарегистрироваться</label
+          >
+          <div class="error"></div>
+        </div>
+        <div class="form__controls form__controls_position">
+          <button
+            class="input-control input-control_color-button"
+            type="submit"
+          >
+            Отправить
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
